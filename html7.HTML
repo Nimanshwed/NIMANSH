@@ -1,0 +1,73 @@
+html>
+<head>
+    
+    <title>electric divises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: peachpuff;
+        }
+        h1 {
+            color: blue;
+        }
+        .item {
+            background-color: neon blue;
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .cart {
+            margin-top: 20px;
+            padding: 10px;
+            background-color:red;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Kids Shop!</h1>
+    <p>Click the button to add an item to the cart.</p>
+
+    <div class="item">
+        <p> ▄︻デ童━一💥 - ₹♾️</p>
+        <button onclick="addToCart(' ▄︻デ童━一💥')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>ᡕᠵデ气亠Ak47 ✓ - ₹♾️</p>
+        <button onclick="addToCart('ᡕᠵデ气亠Ak47 ✓r')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>▄︻デ══━一💥 ♾️ - ₹</p>
+        <button onclick="addToCart('ELECTRIC  GUN ')">Add to Cart</button>
+    </div>
+
+<div class="item">
+        <p>📱 - ₹</p>
+        <button onclick="addToCart('ELECTRIC  GUN ')">Add to Cart</button>
+    </div>
+
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <p id="cartList">Cart is empty</p>
+    </div>
+
+    <script>
+        function addToCart(item) {
+            let cart = document.getElementById("cartList");
+            if (cart.innerHTML === "Cart is empty") {
+                cart.innerHTML = item;
+            } else {
+                cart.innerHTML += ", " + item;
+            }
+        }
+    </script>
+
+</body>
+</html>
+

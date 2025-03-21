@@ -1,0 +1,105 @@
+html>
+<head>
+    
+    <title>electric divises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: peachpuff;
+        }
+        h1 {
+            color: blue;
+        }
+        .item {
+            background-color: neon blue;
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .cart {
+            margin-top: 20px;
+            padding: 10px;
+            background-color:red;
+            display: inline-block;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Kids Shop!</h1>
+    <p>Click the button to add an item to the cart.</p>
+
+    <div class="item">
+        <p> ▄︻デ童━一💥 - ₹4000</p>
+        <button onclick="addToCart(' ▄︻デ童━一💥')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>ᡕᠵデ气亠Ak47 ✓ - ₹50000</p>
+        <button onclick="addToCart('ᡕᠵデ气亠Ak47 ✓r')">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <p>▄︻デ══━一💥  - ₹200000</p>
+        <button onclick="addToCart('ELECTRIC  GUN ')">Add to Cart</button>
+    </div>
+
+<div class="item">
+        <p>📱Iphone - ₹200000</p>
+        <button onclick="addToCart('📱Iphone  ')">Add to Cart</button>
+    </div>
+
+<div class="item">
+        <p>🎮controller  - ₹2000</p>
+        <button onclick="addToCart('controller🎮   ')">Add to Cart</button>
+    </div>
+
+<div class="item">
+        <p>🖥️   - ₹90000</p>
+        <button onclick="addToCart('🖥️ laptop   ')">Add to Cart</button>
+    </div>
+
+<div class="item">
+        <p>🚀 rocket    - ₹90000</p>
+        <button onclick="addToCart(' 🚀  rocket  ')">Add to Cart</button><p>   
+        
+    </div>
+
+    
+<div class="item">
+        <p>   👻ghoust - ₹900</p>
+        <button onclick="addToCart('  👻ghoust ')">Add to Cart</button>
+    </div>
+
+
+<div class="item">
+        <p> 🏆trohoy  - ₹900</p>
+        <button onclick="addToCart(' 🏆trohoy  ')">Add to Cart</button>
+    </div>
+
+<div class="item">
+        <p> 💼bag - ₹9000</p>
+        <button onclick="addToCart(' 💼bag  ')">Add to Cart</button>
+    </div>
+
+   <div class="cart">
+        <h3>Shopping Cart</h3>
+        <p id="cartList">Cart is empty</p>
+    </div>
+
+    <script>
+        function addToCart(item) {
+            let cart = document.getElementById("cartList");
+            if (cart.innerHTML === "Cart is empty") {
+                cart.innerHTML = item;
+            } else {
+                cart.innerHTML += ", " + item;
+            }
+        }
+    </script>
+
+</body>
+</html>
